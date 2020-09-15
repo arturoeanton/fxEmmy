@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="" method="POST">
+    <h2>Username: $username</h2>
+    <h3>MFA</h3>
+    <input type="hidden" name="id" value="$id"/>
+    <input type="text" name="code"/>
+    <input type="submit" value="Next"/>
+    <br/>
+    <% print binding.hasVariable('error') ? error: "" %>
+
+</form>
+
+</body>
+</html>
